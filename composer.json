@@ -32,6 +32,8 @@
         "sort-packages": true
     },
     "scripts": {
-        "tests": "phpcs tests/input --report=summary --report-file=phpcs.log; diff tests/expected_report.txt phpcs.log"
+        "tests": "phpcs tests/input --report=summary --report-file=phpcs.log; diff tests/expected_report.txt phpcs.log",
+        "apply-rules": "cp -R tests/input/ tests/fixed_rules/ && phpcbf tests/fixed_rules",
+        "diff-rules": "diff tests/fixed_rules tests/fixed"
     }
 }
