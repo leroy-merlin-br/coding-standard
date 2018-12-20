@@ -3,8 +3,8 @@
 $string = 'Leroy Merlin'.'bar';
 
 $foo = 'Leroy Merlin';
-$bar    = 'bar';
-$string   = $foo.$bar;
+$bar = 'bar';
+$string = $foo.$bar;
 
 $string = 'Leroy Merlin'.$bar;
 
